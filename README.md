@@ -1,4 +1,4 @@
-# A Quantum Algorithm for Assessing Node Importance in $st$-Connectivity Attacks
+# A Quantum Algorithm for Assessing Node Importance in the $st$-Connectivity Attack
 
 ## 1. Authors
 
