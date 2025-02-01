@@ -293,7 +293,7 @@ def main():
         )
 
         print(f'Display Results   - {time.ctime()}')
-        outputs = np.sin56((np.pi/2**est) * np.arange(2**est))**2
+        outputs = np.sin((np.pi/2**est) * np.arange(2**est))**2
         plt.scatter(outputs, results)
         # plt.bar(np.arange(2**est), results, align="edge", width=.9)
         # plt.show()
