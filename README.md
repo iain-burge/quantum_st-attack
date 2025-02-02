@@ -136,9 +136,9 @@ a* and *Node b* lead to the coalition subset depicted next:
 
 ![](img/coallition.png?raw=true)
 
-in which coalitions of nodes represented by binary string $1100000$ (cf.
-the <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">preprint
-paper</a>, Section 3.4, for further details about this.
+in which coalitions of nodes are represented by binary strings (cf.
+<a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">preprint paper</a>, Section 3.4, for further details 
+about this).
 
 ## References
 
