@@ -46,11 +46,7 @@ Consider the following network:
 
 ![](img/network.png?raw=true)
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> we compute the Shapley values depicted next:
-
-![](img/results.png?raw=true)
-
-A sample execution run of <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> outputs the results shown below:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
 
 ````{verbatim}
 ==========================================
@@ -130,13 +126,16 @@ where the *Quantum* output is the result of Shapley value approximation
 and the *Monte-Carlo* output is the result of random sampling with the same
 amount of samples used by the quantum approach.
 
-Note that the Shapley values of *Node a* and *Node b* lead to a coalition
-of such two nodes, as depicted in the following figure:
+The previous execution run provides the Shapley values depicted next:
+
+![](img/results.png?raw=true)
+
+Note that the Shapley value of 0 for *Node d* indicates that this node
+is useless in the game. Note as well that the Shapley values of *Node
+a* and *Node b* lead to the coalition subset depicted next:
 
 ![](img/coallition.png?raw=true)
 
-Note as well that the Shapley value of 0 for *Node d* indicates that this
-node is useless in the game.
 
 ## References
 
