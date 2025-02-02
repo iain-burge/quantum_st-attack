@@ -5,7 +5,7 @@ Supplementary Material to: A Quantum Algorithm for Assessing Node Importance in 
 
 <a href="https://carleton.ca/scs/people/michel-barbeau/">Michel Barbeau, Carleton University, School of Computer Science, Canada.</a>
 
-<a href="http://www-public.imtbs-tsp.eu/~garcia_a/web/">Joaquin Garcia-Alfaro, Institut Polytechnique de Paris, France.</a>
+<a href="http://j.mp/jgalfaro">Joaquin Garcia-Alfaro, Institut Polytechnique de Paris, France.</a>
 
 ## Abstract
 
@@ -61,6 +61,10 @@ Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. A Quantum Algorithm for As
   pages={1--14},
   year={2025},
   month={January},
+  eprint={},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={},
 }
 ```
 
