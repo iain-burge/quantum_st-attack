@@ -123,7 +123,7 @@ Display Results   -  08:16:41 2025
 
 
 where the *Quantum* output is the result of Shapley value approximation
-and the *Monte-Carlo* output is the result of random sampling with the same
+and the *Monte Carlo* output is the result of random sampling with the same
 amount of samples used by the quantum approach.
 
 The previous execution run provides the Shapley values depicted next:
