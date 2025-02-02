@@ -46,7 +46,7 @@ Consider the following network:
 
 ![](img/network.png?raw=true)
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> we compute the Shapley vales depicted next:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> we compute the Shapley values depicted next:
 
 ![](img/results.png?raw=true)
 
