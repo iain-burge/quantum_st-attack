@@ -40,13 +40,103 @@ All the code related to this work is available in <a href="https://github.com/ia
 
 ### Experimental results
 
-We conducted some python simulations depicted in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">this preprint</a>.
+We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">this preprint</a>. The code of our simulations is available in <a href"https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
 
 Consider the following network:
 
 ![](img/network.png?raw=true)
 
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> we compute the Shapley vales depicted next:
 
+![](img/results.png?raw=true)
+
+A sample execution run of <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a> outputs the results shown below:
+
+````{verbatim}
+==========================================
+target = 0 *(Node a)*
+Construct Circuit -  20:48:23 2025
+Evolve State       -  20:54:02 2025
+Display Results  -  22:08:38 2025
+
+    True Value:  0.21667
+    Quantum:     0.22221    (Error=0.00555)
+    Monte Carlo: 0.125    (Error=0.09167)
+
+==========================================
+target = 1 *(Node b)*
+Construct Circuit -  22:08:38 2025
+Evolve State       -  22:14:24 2025
+Display Results  -  23:08:27 2025
+
+    True Value:  0.21667
+    Quantum:     0.22221    (Error=0.00555)
+    Monte Carlo: 0.1875    (Error=0.02917)
+
+==========================================
+target = 2 *(Node c)*
+Construct Circuit -  23:08:27 2025
+Evolve State       -  23:14:12 2025
+Display Results  -  01:34:54 2025
+
+    True Value:  0.30000
+    Quantum:     0.30866    (Error=0.00866)
+    Monte Carlo: 0.375    (Error=0.07500)
+
+==========================================
+target = 3 *(Node d)*
+Construct Circuit -  01:34:54 2025
+Evolve State       -  01:40:40 2025
+Display Results  -  03:17:57 2025
+
+    True Value:  0.00000
+    Quantum:     0.00000    (Error=0.00000)
+    Monte Carlo: 0.0    (Error=0.00000)
+
+==========================================
+target = 4 *(Node e)*
+Construct Circuit -  03:17:57 2025
+Evolve State       -  03:23:50 2025
+Display Results  -  05:03:27 2025
+
+    True Value:  0.16667
+    Quantum:     0.14645    (Error=0.02022)
+    Monte Carlo: 0.21875    (Error=0.05208)
+
+==========================================
+target = 5 *(Node f)*
+Construct Circuit -  05:03:27 2025
+Evolve State       -  05:09:09 2025
+Display Results  -  06:50:23 2025
+
+    True Value:  0.05000
+    Quantum:     0.03806    (Error=0.01194)
+    Monte Carlo: 0.0625    (Error=0.01250)
+
+==========================================
+target = 6 *(Node g)*
+Construct Circuit -  06:50:23 2025
+Evolve State       -  06:56:10 2025
+Display Results  -  08:16:41 2025
+
+    True Value:  0.05000
+    Quantum:     0.03806    (Error=0.01194)
+    Monte Carlo: 0.09375    (Error=0.04375)
+==========================================
+````
+
+
+where the *Quantum* output is the result of Shapley value approximation
+and the *Monte-Carlo* output is the result of random sampling with the same
+amount of samples used by the quantum approach.
+
+Note that the Shapley values of *Node a* and *Node b* lead to a coalition
+of such two nodes, as depicted in the following figure:
+
+![](img/coallition.png?raw=true)
+
+Note as well that the Shapley value of 0 for *Node d* indicates that this
+node is useless in the game.
 
 ## References
 
