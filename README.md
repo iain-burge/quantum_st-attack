@@ -56,8 +56,8 @@ A sample execution run of <a href="https://github.com/iain-burge/quantum_st-atta
 ==========================================
 target = 0 *(Node a)*
 Construct Circuit -  20:48:23 2025
-Evolve State       -  20:54:02 2025
-Display Results  -  22:08:38 2025
+Evolve State      -  20:54:02 2025
+Display Results   -  22:08:38 2025
 
     True Value:  0.21667
     Quantum:     0.22221    (Error=0.00555)
@@ -66,8 +66,8 @@ Display Results  -  22:08:38 2025
 ==========================================
 target = 1 *(Node b)*
 Construct Circuit -  22:08:38 2025
-Evolve State       -  22:14:24 2025
-Display Results  -  23:08:27 2025
+Evolve State      -  22:14:24 2025
+Display Results   -  23:08:27 2025
 
     True Value:  0.21667
     Quantum:     0.22221    (Error=0.00555)
@@ -76,8 +76,8 @@ Display Results  -  23:08:27 2025
 ==========================================
 target = 2 *(Node c)*
 Construct Circuit -  23:08:27 2025
-Evolve State       -  23:14:12 2025
-Display Results  -  01:34:54 2025
+Evolve State      -  23:14:12 2025
+Display Results   -  01:34:54 2025
 
     True Value:  0.30000
     Quantum:     0.30866    (Error=0.00866)
@@ -86,8 +86,8 @@ Display Results  -  01:34:54 2025
 ==========================================
 target = 3 *(Node d)*
 Construct Circuit -  01:34:54 2025
-Evolve State       -  01:40:40 2025
-Display Results  -  03:17:57 2025
+Evolve State      -  01:40:40 2025
+Display Results   -  03:17:57 2025
 
     True Value:  0.00000
     Quantum:     0.00000    (Error=0.00000)
@@ -96,8 +96,8 @@ Display Results  -  03:17:57 2025
 ==========================================
 target = 4 *(Node e)*
 Construct Circuit -  03:17:57 2025
-Evolve State       -  03:23:50 2025
-Display Results  -  05:03:27 2025
+Evolve State      -  03:23:50 2025
+Display Results   -  05:03:27 2025
 
     True Value:  0.16667
     Quantum:     0.14645    (Error=0.02022)
@@ -106,8 +106,8 @@ Display Results  -  05:03:27 2025
 ==========================================
 target = 5 *(Node f)*
 Construct Circuit -  05:03:27 2025
-Evolve State       -  05:09:09 2025
-Display Results  -  06:50:23 2025
+Evolve State      -  05:09:09 2025
+Display Results   -  06:50:23 2025
 
     True Value:  0.05000
     Quantum:     0.03806    (Error=0.01194)
@@ -116,8 +116,8 @@ Display Results  -  06:50:23 2025
 ==========================================
 target = 6 *(Node g)*
 Construct Circuit -  06:50:23 2025
-Evolve State       -  06:56:10 2025
-Display Results  -  08:16:41 2025
+Evolve State      -  06:56:10 2025
+Display Results   -  08:16:41 2025
 
     True Value:  0.05000
     Quantum:     0.03806    (Error=0.01194)
