@@ -130,12 +130,15 @@ The previous execution run provides the Shapley values depicted next:
 
 ![](img/results.png?raw=true)
 
-Note that the Shapley value of 0 for *Node d* indicates that this node
+Note that the Shapley value of $0$ for *Node d* indicates that this node
 is useless in the game. Note as well that the Shapley values of *Node
 a* and *Node b* lead to the coalition subset depicted next:
 
 ![](img/coallition.png?raw=true)
 
+in which coalitions of nodes represented by binary string $1100000$ (cf.
+the <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">preprint
+paper</a>, Section 3.4, for further details about this.
 
 ## References
 
