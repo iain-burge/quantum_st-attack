@@ -40,7 +40,7 @@ All the code related to this work is available in <a href="https://github.com/ia
 
 ### Experimental results
 
-We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">this preprint</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
+We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://arxiv.org/abs/2502.00446">this preprint</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
 
 Consider the following network:
 
@@ -153,10 +153,10 @@ Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. A Quantum Algorithm for As
   pages={1--14},
   year={2025},
   month={January},
-  eprint={},
+  eprint={2502.00446},
   archivePrefix={arXiv},
   primaryClass={quant-ph},
-  url={},
+  url={https://arxiv.org/abs/2502.00446}, 
 }
 ```
 
