@@ -136,7 +136,7 @@ a* and *Node b* is *st*-connected and is depicted next:
 
 ![](img/coallition.png?raw=true)
 
-in which coalitions of nodes are represented by binary strings (cf.
+The coalitions of nodes are represented by binary strings (cf.
 <a href="https://arxiv.org/abs/2502.00446">preprint paper</a>, Section 3.4, for further details 
 about this).
 
