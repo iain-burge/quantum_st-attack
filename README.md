@@ -131,7 +131,7 @@ The previous execution run provides the Shapley values depicted next:
 ![](img/results.png?raw=true)
 
 Note that the Shapley value of $0$ for *Node d* indicates that this node
-is useless in the game. Shapley values are based on how often subsets of nodes maintain *st*-connectivity for example the coalition of *Node
+is useless in the game. Shapley values are based on how often subsets of nodes maintain *st*-connectivity, for example, the coalition of *Node
 a* and *Node b* is *st*-connected and is depicted next:
 
 ![](img/coallition.png?raw=true)
