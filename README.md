@@ -147,16 +147,13 @@ If using this code for research purposes, please cite:
 Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. A Quantum Algorithm for Assessing Node Importance in the st-Connectivity Attack, 2025.
 
 ```
-@misc{burge-barbeau-alfaro2025st-attack,
+@inproceedings{burge-barbeau-alfaro2025st-attack,
   title={A Quantum Algorithm for Assessing Node Importance in the st-Connectivity Attack},
   author={Burge, Iain and Barbeau, Michel and Garcia-Alfaro, Joaquin},
-  pages={1--14},
+  booktitle={IFIP International Conference on ICT Systems Security and Privacy Protection},
+  pages={234--248},
   year={2025},
-  month={January},
-  eprint={2502.00446},
-  archivePrefix={arXiv},
-  primaryClass={quant-ph},
-  url={https://arxiv.org/abs/2502.00446}, 
+  organization={Springer}
 }
 ```
 
