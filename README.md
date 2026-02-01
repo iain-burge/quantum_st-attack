@@ -137,7 +137,8 @@ a* and *Node b* is *st*-connected and is depicted next:
 ![](img/coallition.png?raw=true)
 
 The coalitions of nodes are represented by binary strings (cf.
-<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, Section 3.4, for further details about this).
+<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">Section 3.4</a>, for further details about this).
+
 
 ## References
 
