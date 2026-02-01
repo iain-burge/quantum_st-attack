@@ -40,7 +40,7 @@ All the code related to this work is available in <a href="https://github.com/ia
 
 ### Experimental results
 
-We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://arxiv.org/abs/2502.00446">this preprint</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
+We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
 
 Consider the following network:
 
@@ -137,8 +137,7 @@ a* and *Node b* is *st*-connected and is depicted next:
 ![](img/coallition.png?raw=true)
 
 The coalitions of nodes are represented by binary strings (cf.
-<a href="https://arxiv.org/abs/2502.00446">preprint paper</a>, Section 3.4, for further details 
-about this).
+<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, Section 3.4, for further details about this).
 
 ## References
 
