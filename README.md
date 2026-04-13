@@ -1,4 +1,4 @@
-Supplementary Material to: A Quantum Algorithm for Assessing Node Importance in the st-Connectivity Attack
+Supplementary Material to: Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle *st*-Connectivity Attacks in Quantum Networks
 ===
 
 <a href="https://github.com/iain-burge/iain-burge">Iain Burge, Institut Polytechnique de Paris, France.</a>

@@ -36,17 +36,17 @@ Graph Analytics, st-Connectivity, Game theoretic node centrality.
 
 ### Updated code
 
-All the code related to this work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
+All the code related to this work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/early-work/code">this repository</a>.
 
 ### Experimental results
 
-We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
+We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/early-work/code">this repository</a>.
 
 Consider the following network:
 
 ![](img/network.png?raw=true)
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/early-work/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
 
 ````{verbatim}
 ==========================================
@@ -137,7 +137,7 @@ a* and *Node b* is *st*-connected and is depicted next:
 ![](img/coallition.png?raw=true)
 
 The coalitions of nodes are represented by binary strings (cf.
-<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">Section 3.4</a>, for further details about this).
+<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/early-work/paper/preprint-arxiv.pdf">Section 3.4</a>, for further details about this).
 
 
 ## References
