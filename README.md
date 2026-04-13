@@ -136,14 +136,25 @@ The previous execution run provides the Shapley values depicted next:
 
 ![](img/extended-results.png?raw=true)
 
-Shapley values are based on how often subsets of nodes maintain 
-*st*-connectivity, for example, the following subgraph indicates 
+Shapley values are based on how often subsets of nodes maintain
+*st*-connectivity, for example, the following subgraph indicates
 that $r_3$ decides if nodes $s$ and $t$ are connected:
 
 ![](img/extended-coallition.png?raw=true)
 
 
 [...]
+
+The following confusion matrix shows the classifications of a balanced
+random dataset:
+
+![](img/QSVM-Detection_confMat.png?raw=true)
+
+The top left quadrant represents true valid state
+classification; the top right quadrant is a false valid state
+classification; the bottom left is false malicious state
+classification; and the bottom right represents a true malicious state
+classification.
 
 ## References
 
