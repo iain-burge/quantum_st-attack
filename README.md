@@ -9,42 +9,50 @@ Supplementary Material to: Identifying Vulnerable Nodes and Detecting Malicious 
 
 ## Abstract
 
-Problems in distributed security often map naturally to graphs. The
-centrality of nodes assesses the importance of nodes in a graph. It is
-used in various applications. Cooperative game theory has been used to
+Problems in distributed system security often map naturally to graphs.
+The centrality assesses the importance of nodes in a graph. It is used
+in various applications. Cooperative game theory has been used to
 create nuanced and flexible notions of node centrality. However, the
 approach is often computationally complex to implement classically.
 This work describes a quantum approach to approximating the importance
-of nodes that maintain a target connection. Additionally, we detail a
+of nodes that maintain a target connection. In addition, we detail a
 method for quickly identifying high-importance nodes. The
 approximation method relies on quantum subroutines for
-st-connectivity, approximating Shapley values, and finding the maximum
-of a list. Finding important nodes relies on a quantum algorithm for
-finding the maximum. We consider st-connectivity attack scenarios in
+*st*-connectivity, approximating Shapley values, and finding the
+maximum of a list. We consider *st*-connectivity attack scenarios in
 which a malicious actor disrupts a subset of nodes to perturb the
 system functionality. Our methods identify the nodes that are most
-important with the aim of minimizing the impact of the attack. The
-node centrality metric identifies where more redundancy is required
-and can be used to enhance network resiliency. Finally, we explore the
-potential complexity benefits of our quantum approach in contrast to
-classical random sampling.
+important in keeping nodes $s$ and $t$ connected. Once we have
+identified high-importance nodes, we require methods to identify when
+those nodes are compromised. We describe how Quantum Support Vector
+Machine (QSVM) classifiers can be used to detect malicious behavior in
+quantum networks. In particular, we describe the detection of
+entanglement attacks in quantum repeaters. We show that quantum
+tomography can be complemented by QSVM classifiers to identify and
+report anomalous situations related to malicious manipulation of
+entanglement swapping. Finally, we explore the potential complexity
+benefits of our quantum approach compared with classical and
+probabilistic methods. We also release all the simulation code in this
+Github repository.
 
-*Keywords:* Quantum Computing, Quantum Algorithm, Distributed System,
-Graph Analytics, *st*-Connectivity, Game theoretic node centrality.
+*Keywords:* Quantum Networks, Game Theory, Shapley Values, Network Security,
+Quantum Graph Analytics, Cybersecurity, Quantum Machine Learning,
+Quantum Support Vector Machine, Entanglement Attacks.
+
 
 *Version:* April 27, 2026
 
-### Extended code
+### Extended Code
 
-All the code related to this work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-code">this repository</a>.
+All the code related to our work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work">this repository</a>.
 
-### Experimental results
+### Experimental Results
 
 Consider the following network:
 
 ![](img/extended-network.png?raw=true)
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-code/QuantumSTConnectivity.py">extended-code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QuantumSTConnectivity.py">extended-work/QuantumSTConnectivity.py</a>, we obtain the results shown below:
 
 ````{verbatim}
 ==========================================
@@ -128,9 +136,9 @@ The previous execution run provides the Shapley values depicted next:
 
 ![](img/extended-results.png?raw=true)
 
-Note that the Shapley value of $0$ for *Node d* indicates that this node
-is useless in the game. Shapley values are based on how often subsets of nodes maintain *st*-connectivity, for example, the coalition of *Node
-a* and *Node b* is *st*-connected and is depicted next:
+Shapley values are based on how often subsets of nodes maintain 
+*st*-connectivity, for example, the following subgraph indicates 
+that $r_3$ decides if nodes $s$ and $t$ are connected:
 
 ![](img/extended-coallition.png?raw=true)
 
@@ -152,7 +160,7 @@ Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying Vulnerable Nod
   eprint={xxxx.yyyy},
   archivePrefix={arXiv},
   primaryClass={quant-ph},
-  url={https://arxiv.org/abs/XXXX.XXX}, 
+  url={https://arxiv.org/abs/XXXX.XXX},
 }
 ```
 
