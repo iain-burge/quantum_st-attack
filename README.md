@@ -145,8 +145,7 @@ that $r_3$ decides if nodes $s$ and $t$ are connected:
 
 [...]
 
-The following confusion matrix shows the classifications of a balanced
-random dataset:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, we obtain [...] The following confusion matrix shows the classifications of a balanced random dataset:
 
 ![](img/QSVM-Detection_confMat.png?raw=true)
 
