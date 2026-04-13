@@ -34,19 +34,17 @@ Graph Analytics, st-Connectivity, Game theoretic node centrality.
 
 *Version:* January 31, 2025
 
-### Updated code
+### Extended code
 
-All the code related to this work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
+All the code related to this work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-code">this repository</a>.
 
 ### Experimental results
 
-We conducted some <a href="https://www.ibm.com/quantum/qiskit">Qiskit</a> simulations over the practical example in <a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>. The code of our simulations is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/code">this repository</a>.
-
 Consider the following network:
 
-![](img/network.png?raw=true)
+![](img/extended-network.png?raw=true)
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/code/QuantumSTConnectivity.py">code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
+By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-code/QuantumSTConnectivity.py">extended-code/QuantumSTConnectivity.py</a>, we obtain the results shown below:
 
 ````{verbatim}
 ==========================================
@@ -128,34 +126,34 @@ amount of samples used by the quantum approach.
 
 The previous execution run provides the Shapley values depicted next:
 
-![](img/results.png?raw=true)
+![](img/extended-results.png?raw=true)
 
 Note that the Shapley value of $0$ for *Node d* indicates that this node
 is useless in the game. Shapley values are based on how often subsets of nodes maintain *st*-connectivity, for example, the coalition of *Node
 a* and *Node b* is *st*-connected and is depicted next:
 
-![](img/coallition.png?raw=true)
+![](img/extended-coallition.png?raw=true)
 
-The coalitions of nodes are represented by binary strings (cf.
-<a href="https://doi.org/10.1007/978-3-031-92886-4_16">our paper at IFIP SEC 2025</a>, <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/paper/preprint-arxiv.pdf">Section 3.4</a>, for further details about this).
 
+[...]
 
 ## References
 
 If using this code for research purposes, please cite:
 
-Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. A Quantum Algorithm for Assessing Node Importance in the st-Connectivity Attack, 40th IFIP International Conference on ICT Systems Security and Privacy Protection (IFIP SEC 2025), Maribor, Slovenia, May 2025.
+Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle *st*-Connectivity Attacks in Quantum Networks, *to appear*, April 2026.
 
 ```
-@inproceedings{burge-barbeau-alfaro2025st-attack,
-  title={A Quantum Algorithm for Assessing Node Importance in the st-Connectivity Attack},
+@techreport{burge-barbeau-alfaro2026st-attack,
+  title={{Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle \emph{st}-Connectivity Attacks in Quantum Networks}},
   author={Burge, Iain and Barbeau, Michel and Garcia-Alfaro, Joaquin},
-  booktitle={IFIP International Conference on ICT Systems Security and Privacy Protection},
-  pages={234--248},
-  year={2025},
-  organization={Springer}
+  year={2026},
+  institution = {SAMOVAR, Télécom SudParis, Institut Polytechnique de Paris, 91120 Palaiseau, France},
+  eprint={xxxx.yyyy},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/XXXX.XXX}, 
 }
 ```
-
 
 
