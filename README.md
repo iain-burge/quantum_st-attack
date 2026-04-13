@@ -30,9 +30,9 @@ potential complexity benefits of our quantum approach in contrast to
 classical random sampling.
 
 *Keywords:* Quantum Computing, Quantum Algorithm, Distributed System,
-Graph Analytics, st-Connectivity, Game theoretic node centrality.
+Graph Analytics, *st*-Connectivity, Game theoretic node centrality.
 
-*Version:* January 31, 2025
+*Version:* April 27, 2026
 
 ### Extended code
 
