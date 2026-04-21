@@ -154,7 +154,7 @@ that $r_3$ decides if nodes $s$ and $t$ are connected:
 ![](img/extended-coallition.png?raw=true)
 
 
-Later on, we can assume an adversary perpetrating malicious entanglement against the swapping services of our quantum network (cf. below figure). Using our cooperative game approach to approximating the importance of nodes that maintain a target connection, we place a classifier in critical nodes to leverage proactive defense triggered by pattern detection of malicious activities.
+Later on, we can assume an adversary perpetrating malicious entanglement to disrup the swapping services of some repeaters of the quantum network (cf. below figure). Using our cooperative game approach to approximating the importance of nodes that maintain a target connection, we place a classifier in critical nodes to leverage proactive defense triggered by pattern detection of malicious activities.
 
 ![](img/QSVM-Detection.png?raw=true)
 
