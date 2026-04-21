@@ -171,7 +171,7 @@ classification.
 
 If using this code for research purposes, please cite:
 
-Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle *st*-Connectivity Attacks in Quantum Networks, *to appear*, April 2026.
+Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle *st*-Connectivity Attacks in Quantum Networks, *to appear*, 2026.
 
 ```
 @techreport{burge-barbeau-alfaro2026st-attack,
