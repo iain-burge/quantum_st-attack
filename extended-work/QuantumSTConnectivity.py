@@ -1,4 +1,3 @@
-
 from collections.abc import Callable
 import time
 from tqdm import tqdm, trange
@@ -157,9 +156,12 @@ def testShap(n: int, l: int, aux: int = 0) -> None:
     allReg       = ptReg[:] + plReg[:] + auxReg[:] + utReg[:]
     qubitIndDict = {qubit: i for i, qubit in enumerate(allReg)}
     def f(bits: str) -> bool:
-            b = [bit=='1' for bit in bits[::-1]]
-            return (b[0] and b[1]) or (b[2] and b[4])\
-                or (b[2] and b[5] and b[6])
+            r = [bit=='1' for bit in bits[::-1]]
+            return (r[0] and r[2] and r[4] and r[6]) or (r[0] and r[2] and r[4] and r[6] and r[5] and r[7])\
+                or (r[1] and r[3] and r[2] and r[4] and r[6])\
+                or (r[1] and r[3] and r[2] and r[4] and r[6] and r[5] and r[7])\
+                or (r[1] and r[3] and r[0] and r[2] and r[4] and r[6])\
+                or (r[1] and r[3] and r[0] and r[2] and r[4] and r[6] and r[5] and r[7])
 
 
     for target in range(n):
@@ -202,7 +204,8 @@ def testShap(n: int, l: int, aux: int = 0) -> None:
         expected = trueShap(n, n-target-1, f)
         quantum  = pos - neg
         mcMethod = monteCarloShap(n,n-target-1,1<<(2*l),f)
-        print(f'{target=}')
+        #print(f'{target=}')
+        print("Node r["+str(target)+"]")
         print(f'\tshap       = {expected:.5f}')
         print(f'\tqmc method = {quantum:.5f}\t(err={abs(quantum-expected):.5f})')
         print(f'\tmc method  = {mcMethod:.5f}\t(err={abs(mcMethod-expected):.5f})')
@@ -217,8 +220,7 @@ def testShap(n: int, l: int, aux: int = 0) -> None:
 def main():
     est = 5
     l   = 4
-    n   = 7
-    # n   = 3
+    n   = 8
     aux = 0
 
 
@@ -234,9 +236,13 @@ def main():
     qubitIndDict = {qubit: i for i, qubit in enumerate(allReg)}
 
     def f(bits: str) -> bool:
-            b = [bit=='1' for bit in bits[::-1]]
-            return (b[0] and b[1]) or (b[2] and b[4])\
-                or (b[2] and b[5] and b[6])
+            r = [bit=='1' for bit in bits[::-1]]
+            return (r[0] and r[2] and r[4] and r[6]) or (r[0] and r[2] and r[4] and r[6] and r[5] and r[7])\
+                or (r[1] and r[3] and r[2] and r[4] and r[6])\
+                or (r[1] and r[3] and r[2] and r[4] and r[6] and r[5] and r[7])\
+                or (r[1] and r[3] and r[0] and r[2] and r[4] and r[6])\
+                or (r[1] and r[3] and r[0] and r[2] and r[4] and r[6] and r[5] and r[7])
+    
 
     # f = lambda bits: bits[::-1] in ['110', '101', '111']
 
@@ -245,8 +251,14 @@ def main():
     # plt.show()
 
     for target in range(n): #temp
-        print(156*'=')
-        print(f'{target = }')
+        print(60*'=')
+        #print(f'{target = }')
+        print("Node r["+str(target)+"]")
+        
+        #expectedOut = trueShap(n, n-target-1, f)        
+        #print(f'\tTrue Value:  {expectedOut:.5f}')
+        #print()
+  
         #Init State
         state = Statevector.from_label((est+l+n+aux+1)*'0')
 
@@ -313,4 +325,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

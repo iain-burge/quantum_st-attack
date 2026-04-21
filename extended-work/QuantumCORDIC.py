@@ -1,4 +1,3 @@
-
 import time
 from tqdm import tqdm, trange
 from typing import Union
