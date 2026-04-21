@@ -9,31 +9,32 @@ Supplementary Material to: Identifying Vulnerable Nodes and Detecting Malicious 
 
 ## Abstract
 
+
 Problems in distributed system security often map naturally to graphs.
-The centrality assesses the importance of nodes in a graph. It is used
-in various applications. Cooperative game theory has been used to
-create nuanced and flexible notions of node centrality. However, the
-approach is often computationally complex to implement classically.
-This work describes a quantum approach to approximating the importance
-of nodes that maintain a target connection. In addition, we detail a
-method for quickly identifying high-importance nodes. The
+The concept of centrality assesses the importance of nodes in a graph.
+It is used in various applications. Cooperative game theory has also
+been used to create nuanced and flexible notions of node centrality.
+However, the approach is often computationally complex to implement
+classically. We describe a quantum approach to approximating the
+importance of quantum nodes that maintain a target connection in a
+quantum network. We detail a method for quickly identifying
+high-importance nodes that can be targeted by adversaries. The
 approximation method relies on quantum subroutines for
 *st*-connectivity, approximating Shapley values, and finding the
-maximum of a list. We consider *st*-connectivity attack scenarios in
-which a malicious actor disrupts a subset of nodes to perturb the
-system functionality. Our methods identify the nodes that are most
-important in keeping nodes $s$ and $t$ connected. Once we have
-identified high-importance nodes, we require methods to identify when
-those nodes are compromised. We describe how Quantum Support Vector
-Machine (QSVM) classifiers can be used to detect malicious behavior in
-quantum networks. In particular, we describe the detection of
-entanglement attacks in quantum repeaters. We show that quantum
-tomography can be complemented by QSVM classifiers to identify and
-report anomalous situations related to malicious manipulation of
-entanglement swapping. Finally, we explore the potential complexity
-benefits of our quantum approach compared with classical and
-probabilistic methods. We also release all the simulation code in this
-Github repository.
+maximum of a list. We consider a malicious actor targeting a subset of
+nodes to perturb the system functionality. Our method identifies the
+nodes that are most important in keeping nodes $s$ and $t$ connected.
+Once we have identified high-importance nodes, we require methods to
+identify when those nodes are compromised. We describe how Quantum
+Support Vector Machine (QSVM) classifiers can be used to detect
+malicious behavior in quantum networks. In particular, we describe the
+detection of entanglement attacks in quantum repeaters. We show that
+our initial assessment approach can be complemented by QSVM
+classifiers to identify and report anomalous situations related to
+malicious manipulation of entanglement swapping. Finally, we explore
+the potential complexity benefits of our quantum approach compared
+with classical and probabilistic methods. We also release all the
+simulation code in this Github repository.
 
 *Keywords:* Quantum Networks, Game Theory, Shapley Values, Network Security,
 Quantum Graph Analytics, Cybersecurity, Quantum Machine Learning,
@@ -57,9 +58,9 @@ By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/
 ````{verbatim}
 ==========================================
 Node r[0]
-Construct Circuit -  20:48:23 
-Evolve State      -  20:54:02 
-Display Results   -  22:08:38 
+Construct Circuit -  20:48:23
+Evolve State      -  20:54:02
+Display Results   -  22:08:38
 
     True Value:  0.0833
     Quantum:     0.0888  (Error=0.00555)
@@ -67,9 +68,9 @@ Display Results   -  22:08:38
 
 ==========================================
 Node r[1]
-Construct Circuit -  22:08:38 
-Evolve State      -  22:14:24 
-Display Results   -  23:08:27 
+Construct Circuit -  22:08:38
+Evolve State      -  22:14:24
+Display Results   -  23:08:27
 
     True Value:  0.03334
     Quantum:     0.03746  (Error=0.00412)
@@ -77,9 +78,9 @@ Display Results   -  23:08:27
 
 ==========================================
 Node r[2]
-Construct Circuit -  23:08:27 
-Evolve State      -  23:14:12 
-Display Results   -  01:34:54 
+Construct Circuit -  23:08:27
+Evolve State      -  23:14:12
+Display Results   -  01:34:54
 
     True Value:  0.28334
     Quantum:     0.29200  (Error=0.00866)
@@ -87,9 +88,9 @@ Display Results   -  01:34:54
 
 ==========================================
 Node r[3]
-Construct Circuit -  01:34:54 
-Evolve State      -  01:40:40 
-Display Results   -  03:17:57 
+Construct Circuit -  01:34:54
+Evolve State      -  01:40:40
+Display Results   -  03:17:57
 
     True Value:  0.03334
     Quantum:     0.03746  (Error=0.00412)
@@ -97,9 +98,9 @@ Display Results   -  03:17:57
 
 ==========================================
 Node r[4]
-Construct Circuit -  03:17:57 
-Evolve State      -  03:23:50 
-Display Results   -  05:03:27 
+Construct Circuit -  03:17:57
+Evolve State      -  03:23:50
+Display Results   -  05:03:27
 
     True Value:  0.28334
     Quantum:     0.29200  (Error=0.00866)
@@ -107,9 +108,9 @@ Display Results   -  05:03:27
 
 ==========================================
 Node r[5]
-Construct Circuit -  05:03:27 
-Evolve State      -  05:09:09 
-Display Results   -  06:50:23 
+Construct Circuit -  05:03:27
+Evolve State      -  05:09:09
+Display Results   -  06:50:23
 
     True Value:  0.00000
     Quantum:     0.00000  (Error=0.00000)
@@ -117,8 +118,8 @@ Display Results   -  06:50:23
 
 ==========================================
 Node r[6]
-Construct Circuit -  06:50:23 
-Evolve State      -  06:56:10 
+Construct Circuit -  06:50:23
+Evolve State      -  06:56:10
 Display Results   -  08:16:41
 
     True Value:  0.28334
@@ -126,9 +127,9 @@ Display Results   -  08:16:41
     Monte Carlo: 0.35834  (Error=0.07500)
 ==========================================
 Node r[7]
-Construct Circuit -  08:20:23 
-Evolve State      -  08:26:10 
-Display Results   -  10:23:12 
+Construct Circuit -  08:20:23
+Evolve State      -  08:26:10
+Display Results   -  10:23:12
 
     True Value:  0.00000
     Quantum:     0.00000  (Error=0.00000)
