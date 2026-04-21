@@ -154,19 +154,15 @@ that $r_3$ decides if nodes $s$ and $t$ are connected:
 ![](img/extended-coallition.png?raw=true)
 
 
-Then, we assume an adversary perpetrating malicious entanglement against the swapping services of a quantum network (cf. below figure). Using our cooperative game approach to approximating the importance of nodes that maintain a target connection, we place a classifier in critical nodes to leverage proactive defense triggered by pattern detection of malicious activities.
+Later on, we can assume an adversary perpetrating malicious entanglement against the swapping services of a quantum network (cf. below figure). Using our cooperative game approach to approximating the importance of nodes that maintain a target connection, we place a classifier in critical nodes to leverage proactive defense triggered by pattern detection of malicious activities.
 
 ![](img/QSVM-Detection.png?raw=true)
 
-Finally, by executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, we obtain the following confusion matrix shows the classifications of a balanced random dataset:
+The QSVM patter detection approach is simulated in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, which provides the following confusion matrix:
 
 ![](img/QSVM-Detection_confMat.png?raw=true)
 
-The top left quadrant represents true valid state
-classification; the top right quadrant is a false valid state
-classification; the bottom left is false malicious state
-classification; and the bottom right represents a true malicious state
-classification.
+The aforementioned confusion matrix shows the classifications of a balanced random dataset. The top left quadrant represents true valid state classification; the top right quadrant is a false valid state classification; the bottom left is false malicious state classification; and the bottom right represents a true malicious state classification.
 
 ## References
 
