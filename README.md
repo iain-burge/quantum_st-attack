@@ -40,7 +40,7 @@ Quantum Graph Analytics, Cybersecurity, Quantum Machine Learning,
 Quantum Support Vector Machine, Entanglement Attacks.
 
 
-*Version:* April 27, 2026
+*Version:* April 21, 2026
 
 ### Extended Code
 
@@ -56,75 +56,85 @@ By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/
 
 ````{verbatim}
 ==========================================
-target = 0 *(Node a)*
-Construct Circuit -  20:48:23 2025
-Evolve State      -  20:54:02 2025
-Display Results   -  22:08:38 2025
+Node r[0]
+Construct Circuit -  20:48:23 
+Evolve State      -  20:54:02 
+Display Results   -  22:08:38 
 
-    True Value:  0.21667
-    Quantum:     0.22221  (Error=0.00555)
-    Monte Carlo: 0.125    (Error=0.09167)
-
-==========================================
-target = 1 *(Node b)*
-Construct Circuit -  22:08:38 2025
-Evolve State      -  22:14:24 2025
-Display Results   -  23:08:27 2025
-
-    True Value:  0.21667
-    Quantum:     0.22221   (Error=0.00555)
-    Monte Carlo: 0.1875    (Error=0.02917)
+    True Value:  0.0833
+    Quantum:     0.0888  (Error=0.00555)
+    Monte Carlo: 0.1749  (Error=0.09167)
 
 ==========================================
-target = 2 *(Node c)*
-Construct Circuit -  23:08:27 2025
-Evolve State      -  23:14:12 2025
-Display Results   -  01:34:54 2025
+Node r[1]
+Construct Circuit -  22:08:38 
+Evolve State      -  22:14:24 
+Display Results   -  23:08:27 
 
-    True Value:  0.30000
-    Quantum:     0.30866  (Error=0.00866)
-    Monte Carlo: 0.375    (Error=0.07500)
+    True Value:  0.03334
+    Quantum:     0.03746  (Error=0.00412)
+    Monte Carlo: 0.06251  (Error=0.02917)
 
 ==========================================
-target = 3 *(Node d)*
-Construct Circuit -  01:34:54 2025
-Evolve State      -  01:40:40 2025
-Display Results   -  03:17:57 2025
+Node r[2]
+Construct Circuit -  23:08:27 
+Evolve State      -  23:14:12 
+Display Results   -  01:34:54 
+
+    True Value:  0.28334
+    Quantum:     0.29200  (Error=0.00866)
+    Monte Carlo: 0.35834  (Error=0.07500)
+
+==========================================
+Node r[3]
+Construct Circuit -  01:34:54 
+Evolve State      -  01:40:40 
+Display Results   -  03:17:57 
+
+    True Value:  0.03334
+    Quantum:     0.03746  (Error=0.00412)
+    Monte Carlo: 0.06251  (Error=0.02917)
+
+==========================================
+Node r[4]
+Construct Circuit -  03:17:57 
+Evolve State      -  03:23:50 
+Display Results   -  05:03:27 
+
+    True Value:  0.28334
+    Quantum:     0.29200  (Error=0.00866)
+    Monte Carlo: 0.35834  (Error=0.07500)
+
+==========================================
+Node r[5]
+Construct Circuit -  05:03:27 
+Evolve State      -  05:09:09 
+Display Results   -  06:50:23 
 
     True Value:  0.00000
     Quantum:     0.00000  (Error=0.00000)
     Monte Carlo: 0.0      (Error=0.00000)
 
 ==========================================
-target = 4 *(Node e)*
-Construct Circuit -  03:17:57 2025
-Evolve State      -  03:23:50 2025
-Display Results   -  05:03:27 2025
+Node r[6]
+Construct Circuit -  06:50:23 
+Evolve State      -  06:56:10 
+Display Results   -  08:16:41
 
-    True Value:  0.16667
-    Quantum:     0.14645  (Error=0.02022)
-    Monte Carlo: 0.21875  (Error=0.05208)
-
+    True Value:  0.28334
+    Quantum:     0.29200  (Error=0.00866)
+    Monte Carlo: 0.35834  (Error=0.07500)
 ==========================================
-target = 5 *(Node f)*
-Construct Circuit -  05:03:27 2025
-Evolve State      -  05:09:09 2025
-Display Results   -  06:50:23 2025
+Node r[7]
+Construct Circuit -  08:20:23 
+Evolve State      -  08:26:10 
+Display Results   -  10:23:12 
 
-    True Value:  0.05000
-    Quantum:     0.03806  (Error=0.01194)
-    Monte Carlo: 0.0625   (Error=0.01250)
-
+    True Value:  0.00000
+    Quantum:     0.00000  (Error=0.00000)
+    Monte Carlo: 0.0      (Error=0.00000)
 ==========================================
-target = 6 *(Node g)*
-Construct Circuit -  06:50:23 2025
-Evolve State      -  06:56:10 2025
-Display Results   -  08:16:41 2025
 
-    True Value:  0.05000
-    Quantum:     0.03806  (Error=0.01194)
-    Monte Carlo: 0.09375  (Error=0.04375)
-==========================================
 ````
 
 
@@ -143,9 +153,11 @@ that $r_3$ decides if nodes $s$ and $t$ are connected:
 ![](img/extended-coallition.png?raw=true)
 
 
-[...]
+Then, we assume an adversary perpetrating malicious entanglement against the swapping services of a quantum network (cf. below figure). Using our cooperative game approach to approximating the importance of nodes that maintain a target connection, we place a classifier in critical nodes to leverage proactive defense triggered by pattern detection of malicious activities.
 
-By executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, we obtain [...] The following confusion matrix shows the classifications of a balanced random dataset:
+![](img/QSVM-Detection.png?raw=true)
+
+Finally, by executing <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, we obtain the following confusion matrix shows the classifications of a balanced random dataset:
 
 ![](img/QSVM-Detection_confMat.png?raw=true)
 
