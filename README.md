@@ -62,9 +62,9 @@ Construct Circuit -  20:48:23
 Evolve State      -  20:54:02
 Display Results   -  22:08:38
 
-    True Value:  0.0833
-    Quantum:     0.0888  (Error=0.00555)
-    Monte Carlo: 0.1749  (Error=0.09167)
+    True Value:  0.08333
+    Quantum:     0.08427  (Error=0.00093)
+    Monte Carlo: 0.09375  (Error=0.01042)
 
 ==========================================
 Node r[1]
@@ -72,9 +72,9 @@ Construct Circuit -  22:08:38
 Evolve State      -  22:14:24
 Display Results   -  23:08:27
 
-    True Value:  0.03334
-    Quantum:     0.03746  (Error=0.00412)
-    Monte Carlo: 0.06251  (Error=0.02917)
+    True Value:  0.03333
+    Quantum:     0.03806  (Error=0.00473)
+    Monte Carlo: 0.0      (Error=0.03333)
 
 ==========================================
 Node r[2]
@@ -168,18 +168,16 @@ The aforementioned confusion matrix shows the classifications of a balanced rand
 
 If using this code for research purposes, please cite:
 
-Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle *st*-Connectivity Attacks in Quantum Networks, *to appear*, 2026.
+Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying vulnerable nodes and detecting malicious entanglement patterns to handle st-connectivity attacks in quantum networks, *to appear*, 2026.
 
 ```
 @techreport{burge-barbeau-alfaro2026st-attack,
-  title={{Identifying Vulnerable Nodes and Detecting Malicious Entanglement Patterns to Handle \emph{st}-Connectivity Attacks in Quantum Networks}},
+  title={Identifying vulnerable nodes and detecting malicious entanglement patterns to handle st-connectivity attacks in quantum networks},
   author={Burge, Iain and Barbeau, Michel and Garcia-Alfaro, Joaquin},
   year={2026},
-  institution = {SAMOVAR, Télécom SudParis, Institut Polytechnique de Paris, 91120 Palaiseau, France},
-  eprint={xxxx.yyyy},
   archivePrefix={arXiv},
   primaryClass={quant-ph},
-  url={https://arxiv.org/abs/XXXX.XXX},
+  url={https://arxiv.org/abs/2502.00446v3},
 }
 ```
 
