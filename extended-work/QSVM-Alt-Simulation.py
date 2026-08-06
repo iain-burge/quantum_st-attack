@@ -326,10 +326,10 @@ def main():
     sns.heatmap(
         np.array([[tent,funent],[fent,tunent]]),
         annot=True, fmt='d', annot_kws={"size": 16},
-        xticklabels=['Entangled','Unentangled'], yticklabels=['Entangled','Unentangled'],
+        xticklabels=['Legitimate','Malicious'], yticklabels=['Legitimate','Malicious'],
         cbar=False
     )
-    plt.xlabel('Prediction')
+    plt.xlabel('QSVM Monitor')
     plt.ylabel('Ground Truth')
     plt.savefig('quispConfusionMatrix.pdf')
     plt.show()
