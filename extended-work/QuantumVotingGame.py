@@ -134,7 +134,6 @@ def main():
         print('\texpc:\t',tally,
               f'\t{"success" if tally>=threshold else "fail"}')
 
-    
 if __name__=="__main__":
     main()
 
