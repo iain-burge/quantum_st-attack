@@ -158,7 +158,7 @@ Later on, we can assume an adversary perpetrating malicious entanglement to disr
 
 ![](img/QSVM-Detection.png?raw=true)
 
-The QSVM patter detection approach is simulated in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation.py">extended-work/QSVM-Simulation.py</a>, which provides the following confusion matrix:
+The QSVM patter detection approach is simulated in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation_baseline.py">extended-work/QSVM-Simulation_baseline.py</a>, which provides the following confusion matrix:
 
 ![](img/QSVM-Detection_confMat.png?raw=true)
 
