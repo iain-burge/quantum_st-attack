@@ -212,9 +212,7 @@ matrix summarizing the obtained results. It shows that the detection
 model makes the correct classification with high accuracy, in
 practice.
 
-![](img/results.png?raw=true)
-
-
+<img src="https://github.com/iain-burge/quantum_st-attack/blob/main/img/results.png" width="100" height="100">
 
 ## References
 
