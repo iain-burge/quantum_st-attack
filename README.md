@@ -205,9 +205,9 @@ probabilities $40\%$, $40\%$ or $20\%$ respectively.
 
 In particular, with $\ell=2$ ($512$ datapoint training set), we found
 the average of $|f|$ over the trials was $1.36\times10^{-3}$
-(std=$8.83\times10^{-4}$). But, with $\ell=3$ ($8192$ datapoint
+(std $=8.83\times10^{-4}$). But, with $\ell=3$ ($8192$ datapoint
 training set), we found $|f|$ to average $2.22\times10^{-4}$
-(std=$1.83\times10^{-4}$). The following figure provides a confusion
+(std $=1.83\times10^{-4}$). The following figure provides a confusion
 matrix summarizing the obtained results. It shows that the detection
 model makes the correct classification with high accuracy, in
 practice.
