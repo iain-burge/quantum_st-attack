@@ -9,45 +9,51 @@ Supplementary Material to: Identifying Vulnerable Nodes and Detecting Malicious 
 
 ## Abstract
 
-
-Problems in distributed system security often map naturally to graphs.
-The concept of centrality assesses the importance of nodes in a graph.
-It is used in various applications. Cooperative game theory has also
-been used to create nuanced and flexible notions of node centrality.
-However, the approach is often computationally complex to implement
-classically. We describe a quantum approach to approximating the
-importance of quantum nodes that maintain a target connection in a
-quantum network. We detail a method for quickly identifying
-high-importance nodes that can be targeted by adversaries. The
-approximation method relies on quantum subroutines for
-*st*-connectivity, approximating Shapley values, and finding the
-maximum of a list. We consider a malicious actor targeting a subset of
-nodes to perturb the system functionality. Our method identifies the
-nodes that are most important in keeping nodes $s$ and $t$ connected.
-Once we have identified high-importance nodes, we require methods to
-identify when those nodes are compromised. We describe how Quantum
-Support Vector Machine (QSVM) classifiers can be used to detect
-malicious behavior in quantum networks. In particular, we describe the
-detection of entanglement attacks in quantum repeaters. We show that
-our initial assessment approach can be complemented by QSVM
-classifiers to identify and report anomalous situations related to
-malicious manipulation of entanglement swapping. Finally, we explore
-the potential complexity benefits of our quantum approach compared
-with classical and probabilistic methods. We also release all the
-simulation code in this Github repository.
+Several problems in distributed system security naturally map to
+graphs. The concept of centrality assesses the importance of nodes in
+a graph. It is used in various applications. Cooperative game theory
+has also been used to create nuanced and flexible notions of node
+centrality. However, the approach is often computationally complex to
+implement in classical settings. Our first contribution describes a
+quantum approach to approximating the importance of quantum nodes that
+support a target connection in a quantum network. We detail a method
+for quickly identifying high-importance nodes that adversaries can
+target. The approximation method relies on quantum subroutines for
+evaluating *st*-connectivity, approximating Shapley values, and
+finding the maximum of a list. We consider a malicious actor targeting
+a subset of nodes to disrupt the system functionality. Our method
+identifies the nodes that are most important in keeping nodes *s* and
+*t* connected. Once we have identified high-importance nodes, we
+require methods to identify when those nodes are compromised. Our
+second contribution describes how Quantum Support Vector Machine
+(QSVM) classifiers can be used to detect malicious behavior in quantum
+networks. In particular, we describe the detection of entanglement
+attacks in quantum repeaters. We show that our initial assessment
+approach can be complemented by QSVM classifiers to identify and alert
+when anomalous situations related to malicious manipulation of
+entanglement swapping occur. Finally, we explore the potential
+complexity benefits of our quantum approach compared with classical
+and probabilistic methods. We also release all the simulation code and
+artifacts associated to the work in this Github repository, to foster
+reproducibility and further research on the topic.
 
 *Keywords:* Quantum Networks, Game Theory, Shapley Values, Network Security,
 Quantum Graph Analytics, Cybersecurity, Quantum Machine Learning,
 Quantum Support Vector Machine, Entanglement Attacks.
 
 
-*Version:* April 21, 2026
+*Version:* August 15, 2026
 
-### Extended Code
+### Full manuscript
 
-All the code related to our work is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work">this repository</a>.
+A pre-print version of our work is available at
+<a href="https://doi.org/10.48550/arXiv.2502.00446">https://doi.org/10.48550/arXiv.2502.00446.
 
-### Experimental Results
+### Full Release of Code and Artifacts
+
+All the code related to our work, including explanations to install and reproduce the resulst, is available in <a href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work">this repository</a>. Some additional explanations about the obtained results follows.
+
+### 1. Quantum approach to approximating the importance of quantum nodes: Experimental Results
 
 Consider the following network:
 
@@ -138,7 +144,6 @@ Display Results   -  10:23:12
 
 ````
 
-
 where the *Quantum* output is the result of Shapley value approximation
 and the *Monte Carlo* output is the result of random sampling with the same
 amount of samples used by the quantum approach.
@@ -158,11 +163,48 @@ Later on, we can assume an adversary perpetrating malicious entanglement to disr
 
 ![](img/QSVM-Detection.png?raw=true)
 
-The QSVM patter detection approach is simulated in <a href="https://github.com/iain-burge/quantum_st-attack/blob/main/extended-work/QSVM-Simulation_baseline.py">extended-work/QSVM-Simulation_baseline.py</a>, which provides the following confusion matrix:
 
-![](img/QSVM-Detection_confMat.png?raw=true)
+### 2. Quantum Support Vector Machine (QSVM) to detect malicious behavior: Experimental Results
 
-The aforementioned confusion matrix shows the classifications of a balanced random dataset. The top left quadrant represents true valid state classification; the top right quadrant is a false valid state classification; the bottom left is false malicious state classification; and the bottom right represents a true malicious state classification.
+The above figures shows that nodes $r_2,r_4,$ and $r_6$ are valuable
+targets. To detect an entanglement attack originating from $r_4$, we
+perform the following steps.
+
+Node $r_2$ constructs two identical two-qubit quantum states denoted
+as} $A_1,B_1$ for the first pair, and $A_2,B_2$ for the second pair,
+where $A_k$ and $B_k$ are entangled. $r_2$ sends both pairs, $A_1,B_1$
+and $A_2,B_2$, to $r_6$ via $r_4$. Based on our adversarial model, if
+$r_4$ is compromised, it is possible for $r_6$ to receive,
+$A_1B_1A_2B_2$, $A_1C_1A_2B_2$, $A_1B_1A_2C_2$, or $A_1C_1A_2C_2$,
+where $C_k$ is an arbitrary qubit not entangled with $A_k$. Finally,
+$r_6$ uses a quantum SVM trained with synthetic data that
+distinguishes the expected state $A_1B_1A_2B_2$, from malicious states
+$A_1C_1A_2B_2$, $A_1B_1A_2C_2$, or $A_1C_1A_2C_2$.
+
+
+To experimentally validate the theoretical work, we ran our detection
+method on a series of datasets corresponding to the target attack
+described in Section~\ref{sec:detectingEntAttack}. The attack is
+implemented using <a
+href="https://github.com/omnetpp/omnetpp/blob/omnetpp-6.0.3/">OMNeT++
+6.0.3</a> and <a href="https://github.com/sfc-aqua/quisp">QuISP
+0.3</a>. All the simulation code and resulting artifacts are released
+<a
+href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work/quisp-exported-datasets">in
+this folder</a>. See the following figure for a representative
+screenshot with the experimental environment.
+
+![](img/expEnvironment.png?raw=true)
+
+To test the code, we produced $512$ legitimate scenarios and $512$
+malicious scenarios. In the legitimate scenarios, $A_1B_1A_2B_2$ were
+received. In the malicious scenarios, $A_1C_1A_2B_2$, $A_1B_1A_2C_2$,
+or $A_1C_1A_2C_2$, were received with probabilities $40\%$, $40\%$ or
+$20\%$ respectively.
+
+![](img/results.png?raw=true)
+
+
 
 ## References
 
