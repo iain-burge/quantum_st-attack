@@ -184,7 +184,9 @@ $A_1C_1A_2B_2$, $A_1B_1A_2C_2$, or $A_1C_1A_2C_2$.
 
 To experimentally validate the theoretical work, we ran our detection
 method on a series of datasets corresponding to the target attack
-described in Section~\ref{sec:detectingEntAttack}. The attack is
+described in Section 2 of the <a
+href="https://doi.org/10.48550/arXiv.2502.00446">following
+pre-print</a>. The attack is
 implemented using <a
 href="https://github.com/omnetpp/omnetpp/blob/omnetpp-6.0.3/">OMNeT++
 6.0.3</a> and <a href="https://github.com/sfc-aqua/quisp">QuISP
