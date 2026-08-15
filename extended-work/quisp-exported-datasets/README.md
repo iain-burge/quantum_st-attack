@@ -81,7 +81,7 @@ If using this code for research purposes, please cite:
 Iain Burge, Michel Barbeau and Joaquin Garcia-Alfaro. Identifying vulnerable nodes and detecting malicious entanglement patterns to handle st-connectivity attacks in quantum networks, *to appear*, 2026.
 
 ```
-@techreport{burge-barbeau-alfaro2026st-attack,
+@misc{burge-barbeau-alfaro2026st-attack,
   title={Identifying vulnerable nodes and detecting malicious entanglement patterns to handle st-connectivity attacks in quantum networks},
   author={Burge, Iain and Barbeau, Michel and Garcia-Alfaro, Joaquin},
   year={2026},
