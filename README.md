@@ -196,7 +196,7 @@ href="https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work/qu
 this folder</a>. See the following figure for a representative
 screenshot with the experimental environment.
 
-![](img/expEnvironment.png?raw=true)
+[![](https://github.com/iain-burge/quantum_st-attack/raw/main/img/expEnvironment.png?raw=true)](https://github.com/iain-burge/quantum_st-attack/tree/main/extended-work/quisp-exported-datasets)
 
 To evaluate the performance of the detection model, we produced $512$
 legitimate scenarios and $512$ malicious scenarios. In the legitimate
