@@ -38,7 +38,7 @@ All the simulation code and resulting artifacts are available in the
 following <a
 href="https://github.com/jgalfaro/quisp-PRE">repository</a>. A VirtualBox Virtual Machine ready to run and reproduce the experiments is available in <a href="https://filesender.renater.fr/?s=download&token=c2a65407-985f-4061-a12a-7f40db4e84b4">this link</a>. Additional instructions to extract and reproduce the experimental work is provided in the following videocapture:
 
-[![](https://github.com/iain-burge/quantum_st-attack/raw/main/img/expEnvironment.png?raw=true)](https://www.youtube.com/watch?v=manIIGTkhY8)
+[![](https://github.com/iain-burge/quantum_st-attack/raw/main/img/expEnvironment.png?raw=true)](https://www.youtube.com/watch?v=FnYSJW9GQss)
 
 To evaluate the performance of the detection model, we produced $512$
 legitimate scenarios and $512$ malicious scenarios. In the legitimate
