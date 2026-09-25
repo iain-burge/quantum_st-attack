@@ -36,7 +36,7 @@ href="https://github.com/omnetpp/omnetpp/blob/omnetpp-6.0.3/">OMNeT++
 
 All the simulation code and resulting artifacts are available in the
 following <a
-href="https://github.com/jgalfaro/quisp-PRE">repository</a>. A VirtualBox Virtual Machine ready to run and reproduce the experiments is available in <a href="https://filesender.renater.fr/?s=download&token=c1c78bda-21bf-46be-bd15-96da01dfef0b">this link</a>. Additional instructions to extract and reproduce the experimental work is provided in the following videocapture:
+href="https://github.com/jgalfaro/quisp-PRE">repository</a>. A VirtualBox Virtual Machine ready to run and reproduce the experiments is available in <a href="https://drive.google.com/file/d/1pSxSqzKxIqBY2PZwcarsfYanvTGsqOYZ/view?usp=sharing">this link</a>. Additional instructions to extract and reproduce the experimental work is provided in the following videocapture:
 
 [![](https://github.com/iain-burge/quantum_st-attack/raw/main/img/expEnvironment.png?raw=true)](https://www.youtube.com/watch?v=FnYSJW9GQss)
 
